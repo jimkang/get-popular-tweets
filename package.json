@@ -1,0 +1,29 @@
+{
+  "name": "get-popular-tweets",
+  "version": "1.0.0",
+  "description": "This module grabs \"popular\" tweets at random by jumping from the `trends/place` Twitter API endpoint to `search/tweets`.",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jimkang/get-popular-tweets.git"
+  },
+  "keywords": [],
+  "author": "Jim Kang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jimkang/get-popular-tweets/issues"
+  },
+  "homepage": "https://github.com/jimkang/get-popular-tweets",
+  "devDependencies": {
+    "tape": "^3.0.3"
+  },
+  "dependencies": {
+    "call-next-tick": "^1.1.2",
+    "lodash": "^3.10.1",
+    "probable": "^1.7.0",
+    "twit": "^2.1.0"
+  }
+}
