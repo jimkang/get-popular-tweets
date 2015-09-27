@@ -1,6 +1,6 @@
 {
   "name": "get-popular-tweets",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This module grabs \"popular\" tweets at random by jumping from the `trends/place` Twitter API endpoint to `search/tweets`.",
   "main": "index.js",
   "scripts": {
