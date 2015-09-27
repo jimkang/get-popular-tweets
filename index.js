@@ -24,7 +24,8 @@ function getPopularTweets(opts, popularTweetsDone) {
     [
       getTrends,
       pickTrend,
-      searchTrend
+      searchTrend,
+      passBackStatuses
     ],
     popularTweetsDone
   );
@@ -48,6 +49,10 @@ function getPopularTweets(opts, popularTweetsDone) {
     };
     twit.get('search/tweets', params, done);
   }
+}
+
+function passBackStatuses(data, response, done) {
+  callNextTick(done, null, data.statuses);
 }
 
 module.exports = getPopularTweets;
